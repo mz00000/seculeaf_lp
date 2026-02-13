@@ -10,7 +10,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Shield className="w-6 h-6 text-gray-900" />
-            <span className="text-xl font-bold text-gray-900">SecureCheck</span>
+            <span className="text-xl font-bold text-gray-900">Seculeaf</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-gray-600 hover:text-gray-900 transition">
@@ -34,13 +34,13 @@ export default function Page() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <div className="inline-block bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium">
-                  🎯 中小企業向け定額診断
+                  🎯 Seculeaf 運用診断
                 </div>
                 <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight text-balance">
-                  受注を逃さないための、定額脆弱性診断
+                  受注を逃さないための、包括的な運用チェック
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed text-balance">
-                  高額な診断費用で諦めていませんか？最低限必要なセキュリティ対策を可視化し、取引先への信頼を証明します。
+                  高額な診断費用で諦めていませんか？最低限必要なセキュリティ対策を可視化し、取引先に説明できる“セキュリティ体制”を整えることを支援します。
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
