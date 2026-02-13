@@ -477,7 +477,7 @@ export default function Page() {
           </div>
           <div className="border-t border-gray-800 pt-8">
             <p className="text-center text-sm">
-              &copy; 2024 SecureCheck Inc. All rights reserved.
+              &copy; 2026 Seculeaf All rights reserved.
             </p>
           </div>
         </div>
