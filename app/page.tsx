@@ -1,6 +1,6 @@
-import React from 'react'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, CheckCircle2, Shield, TrendingUp, Lock } from 'lucide-react'
+import { ArrowRight, CheckCircle2, Shield } from 'lucide-react'
 
 export default function Page() {
   return (
@@ -54,10 +54,11 @@ export default function Page() {
               </div>
             </div>
             <div className="relative h-96 md:h-full rounded-2xl overflow-hidden">
-              <img 
-                src="/hero-shield.jpg" 
-                alt="セキュリティ保護のイラスト" 
-                className="w-full h-full object-cover"
+              <Image
+                src="/hero-shield.jpg"
+                alt="セキュリティ保護のイラスト"
+                fill
+                className="object-cover"
               />
             </div>
           </div>
@@ -76,12 +77,13 @@ export default function Page() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Point 1 */}
-            <div className="space-y-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-gray-900 transition overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 overflow-hidden bg-gray-200">
-                <img 
-                  src="/low-cost.jpg" 
-                  alt="コスト削減イラスト" 
-                  className="w-full h-full object-cover"
+            <div className="space-y-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-gray-900 overflow-hidden hover:shadow-lg transition-all">
+              <div className="h-48 overflow-hidden bg-gray-200 relative">
+                <Image
+                  src="/low-cost.jpg"
+                  alt="コスト削減イラスト"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-8 space-y-4">
@@ -93,12 +95,13 @@ export default function Page() {
             </div>
 
             {/* Point 2 */}
-            <div className="space-y-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-gray-900 transition overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 overflow-hidden bg-gray-200">
-                <img 
-                  src="/trust-verification.jpg" 
-                  alt="信頼検証イラスト" 
-                  className="w-full h-full object-cover"
+            <div className="space-y-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-gray-900 overflow-hidden hover:shadow-lg transition-all">
+              <div className="h-48 overflow-hidden bg-gray-200 relative">
+                <Image
+                  src="/trust-verification.jpg"
+                  alt="信頼検証イラスト"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-8 space-y-4">
@@ -110,12 +113,13 @@ export default function Page() {
             </div>
 
             {/* Point 3 */}
-            <div className="space-y-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-gray-900 transition overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 overflow-hidden bg-gray-200">
-                <img 
-                  src="/step-up-growth.jpg" 
-                  alt="成長ステップイラスト" 
-                  className="w-full h-full object-cover"
+            <div className="space-y-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-gray-900 overflow-hidden hover:shadow-lg transition-all">
+              <div className="h-48 overflow-hidden bg-gray-200 relative">
+                <Image
+                  src="/step-up-growth.jpg"
+                  alt="成長ステップイラスト"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-8 space-y-4">
@@ -141,11 +145,12 @@ export default function Page() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl border-l-4 border-gray-900 overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-40 overflow-hidden bg-gray-200">
-                <img 
-                  src="/problem-solution.jpg" 
-                  alt="問題解決イラスト" 
-                  className="w-full h-full object-cover"
+              <div className="h-40 overflow-hidden bg-gray-200 relative">
+                <Image
+                  src="/problem-solution.jpg"
+                  alt="問題解決イラスト"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-8">
@@ -157,11 +162,12 @@ export default function Page() {
             </div>
 
             <div className="bg-white rounded-xl border-l-4 border-gray-900 overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-40 overflow-hidden bg-gray-200">
-                <img 
-                  src="/low-cost.jpg" 
-                  alt="コスト課題イラスト" 
-                  className="w-full h-full object-cover"
+              <div className="h-40 overflow-hidden bg-gray-200 relative">
+                <Image
+                  src="/low-cost.jpg"
+                  alt="コスト課題イラスト"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-8">
@@ -173,11 +179,12 @@ export default function Page() {
             </div>
 
             <div className="bg-white rounded-xl border-l-4 border-gray-900 overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-40 overflow-hidden bg-gray-200">
-                <img 
-                  src="/security-checklist.jpg" 
-                  alt="セキュリティチェックリストイラスト" 
-                  className="w-full h-full object-cover"
+              <div className="h-40 overflow-hidden bg-gray-200 relative">
+                <Image
+                  src="/security-checklist.jpg"
+                  alt="セキュリティチェックリストイラスト"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-8">
@@ -350,10 +357,10 @@ export default function Page() {
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { step: '01', title: 'お申し込み', desc: 'サービスにお申し込みいただき��す' },
+              { step: '01', title: 'お申し込み', desc: 'サービスにお申し込みいただきます' },
               { step: '02', title: 'ヒアリング', desc: '専門用語不要の丁寧なヒアリング' },
               { step: '03', title: '診断実施', desc: '自動診断＆チェックシート回答' },
-              { step: '04', title: 'レポート送付', desc: '結果レポート送付・対策アド��イス' },
+              { step: '04', title: 'レポート送付', desc: '結果レポート送付・対策アドバイス' },
             ].map((item, idx) => (
               <div key={idx} className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-900 text-white text-2xl font-bold mb-4">
