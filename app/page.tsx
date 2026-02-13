@@ -346,7 +346,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <Button variant="outline" className="w-full border-gray-900 text-gray-900 hover:bg-gray-50">
+              <Button variant="outline" className="w-full border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white">
                 見積もりを作成する
               </Button>
             </div>
@@ -361,15 +361,14 @@ export default function Page() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-balance">
               導入の流れ
             </h2>
-            <p className="text-xl text-gray-600">申し込んだ後のイメージを持たせる</p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
               { step: '01', title: 'お申し込み', desc: 'サービスにお申し込みいただきます' },
-              { step: '02', title: 'ヒアリング', desc: '専門用語不要の丁寧なヒアリング' },
-              { step: '03', title: '診断実施', desc: '自動診断＆チェックシート回答' },
-              { step: '04', title: 'レポート送付', desc: '結果レポート送付・対策アドバイス' },
+              { step: '02', title: '事前準備', desc: '対象ドメインの所有確認' },
+              { step: '03', title: '診断実施', desc: '自動スキャン＆チェックシート回答' },
+              { step: '04', title: 'レポートダウンロード', desc: '社内用/取引先提出用レポート送付' },
             ].map((item, idx) => (
               <div key={idx} className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-900 text-white text-2xl font-bold mb-4">
@@ -431,7 +430,7 @@ export default function Page() {
             <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 text-base px-8">
               無料で資料をダウンロード
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-gray-800 text-base px-8">
+            <Button size="lg" variant="outline" className="border-white bg-transparent text-white hover:bg-gray-800 hover:text-white text-base px-8">
               お問い合わせ
             </Button>
           </div>
@@ -445,10 +444,10 @@ export default function Page() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Shield className="w-5 h-5" />
-                <span className="font-bold text-white">SecureCheck</span>
+                <span className="font-bold text-white">Seculeaf</span>
               </div>
               <p className="text-sm">
-                中小企業向けの定額制脆弱性診断サービス
+                中小企業向けの運用診断サービスを提供します
               </p>
             </div>
             <div>
