@@ -105,9 +105,9 @@ export default function Page() {
                 />
               </div>
               <div className="p-8 space-y-4">
-                <h3 className="text-2xl font-bold text-gray-900">信頼の証明</h3>
+                <h3 className="text-2xl font-bold text-gray-900">信頼の構築</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  各種団体の基準を網羅したチェックシートで、大手企業へのアピールに活用。取引先からの信頼を獲得できます。
+                  OWASP/IPAの基準を網羅したチェックシートで、大手企業へのアピールに活用。取引先からの信頼を獲得できます。
                 </p>
               </div>
             </div>
@@ -157,7 +157,6 @@ export default function Page() {
                 <p className="text-gray-700 font-semibold mb-3">
                   「大手企業からセキュリティチェックシートの提出を求められたが、どう書けばいいか分からない」
                 </p>
-                <p className="text-sm text-gray-500">多くの中小企業が取引先からの要求に応えられずにいます</p>
               </div>
             </div>
 
@@ -172,9 +171,8 @@ export default function Page() {
               </div>
               <div className="p-8">
                 <p className="text-gray-700 font-semibold mb-3">
-                  「脆弱性診断の見積もりが300万円と言われ、手が出せない」
+                  「脆弱性診断の見積もりが100万円と言われ、手が出せない」
                 </p>
-                <p className="text-sm text-gray-500">高額な診断費用が経営を圧迫しています</p>
               </div>
             </div>
 
@@ -191,18 +189,17 @@ export default function Page() {
                 <p className="text-gray-700 font-semibold mb-3">
                   「何から手をつければいいのか、専門用語ばかりで難しすぎる」
                 </p>
-                <p className="text-sm text-gray-500">セキュリティの知識がなく判断できません</p>
               </div>
             </div>
           </div>
 
           <div className="mt-12 p-8 rounded-xl bg-white border-2 border-gray-900">
             <p className="text-center text-xl font-semibold text-gray-900 mb-4">
-              その悩み、当社の『定額・簡易診断パッケージ』が解決します
+              その悩み『Seculeaf 運用診断』が解決します
             </p>
             <div className="flex justify-center pt-4">
               <Button size="lg" className="bg-gray-900 text-white hover:bg-gray-800">
-                今すぐ相談する
+                今すぐ申し込む
               </Button>
             </div>
           </div>
@@ -227,9 +224,9 @@ export default function Page() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">自動簡易診断</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Webサイトの自動セキュリティチェック</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  ツールによるスピーディーな脆弱性検知。わずか数時間で初期診断が完了します。
+                  ツールによるスピーディーな脆弱性検知。わずか数分で初期診断が完了します。
                 </p>
               </div>
             </div>
@@ -243,7 +240,7 @@ export default function Page() {
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">運用状況チェックシート</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  IPAや各種セキュリティ団体の基準を網羅。社内スタッフが回答するだけで、自社の対策状況が「見える化」されます。
+                  IPAやOWASPの基準を網羅。社内スタッフが回答するだけで、自社の対策状況が「見える化」されます。
                 </p>
               </div>
             </div>
@@ -257,7 +254,7 @@ export default function Page() {
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">診断レポートの活用</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  そのまま取引先へのアピール材料として使える「報告書」。大手企業への提出に対応できます。
+                  そのまま取引先への提出書類として使える「報告書」。大手企業への説明責任を果たせます。
                 </p>
               </div>
             </div>
@@ -267,78 +264,90 @@ export default function Page() {
 
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-balance">
               料金プラン
             </h2>
-            <p className="text-xl text-gray-600">不透明な価格設定を排除した明確な料金体系</p>
+            <p className="text-xl text-gray-600">買い切り型だから、継続費用の心配なし</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Standard Plan */}
-            <div className="bg-white rounded-xl p-8 border-2 border-gray-200 hover:border-gray-900 transition">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">スタンダードプラン</h3>
-              <p className="text-gray-600 mb-6">定額制で安心</p>
+            {/* 基本パック */}
+            <div className="bg-white rounded-xl p-8 border-2 border-gray-900 flex flex-col">
               <div className="mb-6">
-                <span className="text-5xl font-bold text-gray-900">月額</span>
-                <span className="text-3xl font-bold text-gray-900 ml-2">◯◯円</span>
-                <p className="text-gray-600 text-sm mt-2">（一般的な診断100万〜300万に比べ、約数分の1のコストで開始可能）</p>
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="text-2xl font-bold text-gray-900">基本パック</h3>
+                  <span className="text-xs font-medium text-gray-600 bg-gray-100 px-2 py-0.5 rounded-full">まずはこれ</span>
+                </div>
+                <p className="text-gray-500 text-sm">買い切り／初回＋再スキャン1回込み</p>
               </div>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center gap-3 text-gray-700">
-                  <CheckCircle2 className="w-5 h-5 text-gray-900 flex-shrink-0" />
-                  自動簡易診断
+              <div className="mb-8">
+                <p className="text-sm text-gray-500 mb-1">一括</p>
+                <span className="text-5xl font-bold text-gray-900">50,000</span>
+                <span className="text-xl font-bold text-gray-900 ml-1">円</span>
+                <p className="text-gray-400 text-xs mt-1">税別</p>
+              </div>
+              <ul className="space-y-4 mb-10 flex-1">
+                <li className="flex items-start gap-3 text-gray-700">
+                  <CheckCircle2 className="w-5 h-5 text-gray-900 flex-shrink-0 mt-0.5" />
+                  <span>Webサイトの自動スキャン<span className="text-gray-400 text-sm">（1ドメイン）</span></span>
                 </li>
-                <li className="flex items-center gap-3 text-gray-700">
-                  <CheckCircle2 className="w-5 h-5 text-gray-900 flex-shrink-0" />
-                  チェックシート作成
+                <li className="flex items-start gap-3 text-gray-700">
+                  <CheckCircle2 className="w-5 h-5 text-gray-900 flex-shrink-0 mt-0.5" />
+                  運用チェック（回答フォーム）
                 </li>
-                <li className="flex items-center gap-3 text-gray-700">
-                  <CheckCircle2 className="w-5 h-5 text-gray-900 flex-shrink-0" />
-                  診断レポート提供
+                <li className="flex items-start gap-3 text-gray-700">
+                  <CheckCircle2 className="w-5 h-5 text-gray-900 flex-shrink-0 mt-0.5" />
+                  取引先提出用レポート
                 </li>
-                <li className="flex items-center gap-3 text-gray-700">
-                  <CheckCircle2 className="w-5 h-5 text-gray-900 flex-shrink-0" />
-                  基本サポート
+                <li className="flex items-start gap-3 text-gray-700">
+                  <CheckCircle2 className="w-5 h-5 text-gray-900 flex-shrink-0 mt-0.5" />
+                  社内用レポート
                 </li>
               </ul>
               <Button className="w-full bg-gray-900 text-white hover:bg-gray-800">
-                詳細を見る
+                この内容で申し込む
               </Button>
             </div>
 
-            {/* Premium Plan */}
-            <div className="bg-gray-900 text-white rounded-xl p-8 border-2 border-gray-900 relative">
-              <div className="absolute top-4 right-4 bg-gray-700 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                推奨
-              </div>
-              <h3 className="text-2xl font-bold mb-2">本格診断プラン</h3>
-              <p className="text-gray-300 mb-6">ステップアップで安心</p>
+            {/* 追加オプション */}
+            <div className="bg-white rounded-xl p-8 border-2 border-gray-200 flex flex-col">
               <div className="mb-6">
-                <span className="text-5xl font-bold">カスタム</span>
-                <p className="text-gray-400 text-sm mt-2">簡易診断からの移行でコストダウンできる仕組み</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-1">追加オプション</h3>
+                <p className="text-gray-500 text-sm">必要な分だけ追加できます</p>
               </div>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center gap-3 text-gray-200">
-                  <CheckCircle2 className="w-5 h-5 text-gray-300 flex-shrink-0" />
-                  手動による詳細診断
-                </li>
-                <li className="flex items-center gap-3 text-gray-200">
-                  <CheckCircle2 className="w-5 h-5 text-gray-300 flex-shrink-0" />
-                  ペネトレーションテスト
-                </li>
-                <li className="flex items-center gap-3 text-gray-200">
-                  <CheckCircle2 className="w-5 h-5 text-gray-300 flex-shrink-0" />
-                  詳細な改善提案
-                </li>
-                <li className="flex items-center gap-3 text-gray-200">
-                  <CheckCircle2 className="w-5 h-5 text-gray-300 flex-shrink-0" />
-                  優先サポート
-                </li>
-              </ul>
-              <Button variant="outline" className="w-full border-white text-gray-900 bg-white hover:bg-gray-100">
-                お見積り
+
+              <div className="space-y-4 mb-6 flex-1">
+                {/* オプション 1 */}
+                <div className="rounded-lg border border-gray-200 p-5 flex items-center justify-between gap-4">
+                  <div>
+                    <p className="font-semibold text-gray-900">再スキャン枠</p>
+                    <p className="text-gray-400 text-xs mt-0.5">修正後の再チェックに</p>
+                  </div>
+                  <span className="whitespace-nowrap rounded-full bg-gray-100 px-4 py-1.5 text-sm font-bold text-gray-900">
+                    +10,000円 / 回
+                  </span>
+                </div>
+
+                {/* オプション 2 */}
+                <div className="rounded-lg border border-gray-200 p-5 flex items-center justify-between gap-4">
+                  <div>
+                    <p className="font-semibold text-gray-900">ドメイン追加</p>
+                    <p className="text-gray-400 text-xs mt-0.5">複数サイトをまとめて診断</p>
+                  </div>
+                  <span className="whitespace-nowrap rounded-full bg-gray-100 px-4 py-1.5 text-sm font-bold text-gray-900">
+                    +20,000円 / ドメイン
+                  </span>
+                </div>
+
+                <p className="text-gray-400 text-xs pt-2">
+                  例：2ドメイン＋再スキャン2回 → 80,000円
+                </p>
+              </div>
+
+              <Button variant="outline" className="w-full border-gray-900 text-gray-900 hover:bg-gray-50">
+                見積もりを作成する
               </Button>
             </div>
           </div>
